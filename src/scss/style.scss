@@ -12,13 +12,20 @@
 // Подключить если есть файл иконочного шрифта
 // @import "fonts/icons";
 // @import url(https://fonts.googleapis.com/css?family=Raleway:regular,500,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,600,700,800&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600,800&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap);
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "";
-$fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
+$fontFamily: "Lato", sans-serif;
+$fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #000;
+$mainColor: #42474C;
+$blueGreenColor: #2A93CA;
+$titleColor: #1E2428;
+$btnColor: #4779B8;
+$bgColor: #F4F6F6;
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -49,6 +56,8 @@ $mobileSmall: em(479.98); // Телефоны S
 @import "base/null";
 
 body {
+
+	background-color: $bgColor;
 
 	// Скролл заблокирован
 	.lock & {
