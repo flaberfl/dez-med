@@ -82,3 +82,142 @@
     }
   }
 }
+
+//========================================================================================================================================================
+
+.contacts {
+
+  /* .contacts__container */
+  &__container {}
+
+  /* .contacts__list */
+  &__list {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // display: flex;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+
+    // &>* {
+    //   width: 30%;
+    // }
+  }
+
+  /* .contacts__time */
+  &__item {
+    padding-top: rem(12);
+  }
+
+  /* .contacts__time */
+  &__time {}
+
+  /* .contacts__production */
+  &__production {}
+
+  /* .contacts__contact */
+  &__contact {}
+
+  &__title {
+    margin-bottom: rem(5);
+
+    font-size: rem(24);
+    // font-weight: 600;
+    line-height: math.div(40, 24);
+    color: $blueGreenColor;
+  }
+}
+
+.time-contacts {
+  padding-left: rem(27);
+  padding-right: rem(52);
+  padding-bottom: rem(40);
+
+  /* .time-contacts__title */
+  &__title {}
+
+  /* .time-contacts__list */
+  &__list {}
+
+  /* .time-contacts__item */
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: rem(8);
+
+    &:not(:last-child) {
+      margin-bottom: rem(8);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+  }
+
+  /* .time-contacts__days */
+  &__days {
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: math.div(24, 14);
+  }
+
+  /* .time-contacts__hourse */
+  &__hourse {
+    color: $blueGreenColor;
+  }
+}
+
+.production-contacts {
+  padding-right: rem(27);
+
+  /* .production-contacts__title */
+  &__title {}
+
+  /* .production-contacts__text */
+  &__text {
+    font-size: rem(16);
+    line-height: math.div(27, 16);
+  }
+}
+
+.contact-contacts {
+  padding-bottom: rem(30);
+
+  /* .contact-contacts__list */
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+  }
+
+  /* .contact-contacts__item */
+  &__item {
+
+    display: flex;
+    align-items: center;
+    column-gap: rem(11);
+
+    a {
+      font-size: rem(16);
+      font-weight: 700;
+      line-height: math.div(27, 16);
+
+    }
+  }
+
+  /* .contact-contacts__phone */
+  &__phone {}
+
+  /* .contact-contacts__adress */
+  &__adress {}
+
+  /* .contact-contacts__mail */
+  &__mail {}
+}
+
+.contact-contacts {
+  font-size: rem(16);
+
+  /* .ccontact-contacts__title */
+  &__title {}
+}
