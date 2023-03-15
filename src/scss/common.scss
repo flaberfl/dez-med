@@ -44,14 +44,20 @@
   overflow: hidden;
 }
 
+.desktop-hidden {
+  @media (min-width:$mobile) {
+    display: none !important;
+  }
+}
+
 .mobile-hidden {
   @media (max-width:$mobile) {
     display: none !important;
   }
 }
 
-.desktop-hidden {
-  @media (min-width:$mobile) {
+.m-mobile-hidden {
+  @media (max-width: em(360)) {
     display: none !important;
   }
 }

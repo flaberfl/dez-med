@@ -17,14 +17,6 @@
     justify-content: space-between;
   }
 
-  // &__bg {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   object-fit: cover;
-  // }
-
   /* .main__content */
   &__content {}
 
@@ -98,7 +90,7 @@
 
     @media (max-width:$mobile) {
       grid-template-columns: repeat(1, 1fr);
-      max-width: rem(312);
+      @include adaptiveValue("width", 700, 312);
       justify-items: center;
       margin: 0 auto;
     }
@@ -116,8 +108,8 @@
     }
 
     @media (max-width:$mobile) {
-      max-width: rem(312);
-      padding: 0 rem(10);
+      width: 100%;
+      padding: rem(20);
     }
   }
 
@@ -142,6 +134,10 @@
     font-weight: 600;
     line-height: math.div(40, 24);
     color: $blueGreenColor;
+
+    @media (max-width:$mobile) {
+      font-size: rem(22);
+    }
   }
 }
 
@@ -150,14 +146,15 @@
   @media (min-width:$mobile) {
     padding-left: rem(27);
     padding-right: rem(52);
-
   }
 
   /* .time-contacts__title */
   &__title {}
 
   /* .time-contacts__list */
-  &__list {}
+  &__list {
+    // overflow: auto;
+  }
 
   /* .time-contacts__item */
   &__item {
@@ -170,7 +167,6 @@
       margin-bottom: rem(8);
       border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     }
-
   }
 
   /* .time-contacts__days */
@@ -178,11 +174,19 @@
     font-size: rem(14);
     font-weight: 600;
     line-height: math.div(24, 14);
+
+    @media (max-width:$mobile) {
+      font-size: rem(12);
+    }
   }
 
   /* .time-contacts__hourse */
   &__hourse {
     color: $blueGreenColor;
+
+    @media (max-width:$mobile) {
+      font-size: rem(12);
+    }
   }
 }
 
@@ -198,6 +202,10 @@
   &__text {
     font-size: rem(16);
     line-height: math.div(27, 16);
+
+    @media (max-width:$mobile) {
+      font-size: rem(14);
+    }
   }
 }
 
@@ -224,15 +232,21 @@
       font-size: rem(16);
       font-weight: 700;
       line-height: math.div(27, 16);
-
     }
   }
 
   /* .contact-contacts__phone */
-  &__phone {}
+  &__phone {
+
+    @media (max-width:$mobile) {
+      font-size: rem(24) !important;
+    }
+  }
 
   /* .contact-contacts__adress */
-  &__adress {}
+  &__adress {
+    font-size: rem(16) !important;
+  }
 
   /* .contact-contacts__mail */
   &__mail {}
@@ -240,8 +254,6 @@
 
 .contact-contacts {
   font-size: rem(16);
-
-
 
   /* .ccontact-contacts__title */
   &__title {}
