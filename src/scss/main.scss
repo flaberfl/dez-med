@@ -45,7 +45,7 @@
     line-height: math.div(49, 36);
     color: #fff;
     text-transform: uppercase;
-    
+
     span {
       @include adaptiveValue("font-size", 36, 16);
       text-transform: lowercase;
@@ -66,8 +66,15 @@
 
   /* .main__services */
   &__services {
-    display: inline-flex;
+
+    display: flex;
     flex-direction: column;
     gap: rem(45);
+    align-items: center;
+
+    @media (max-width:$mobile){
+       padding-top: rem(35); 
+    }
+
   }
 }
