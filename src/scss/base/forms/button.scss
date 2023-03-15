@@ -13,8 +13,6 @@
 
 	transition: all 0.3s ease 0s;
 
-	// height: rem(54);
-
 	&_white {
 		padding: rem(20) rem(25);
 
@@ -42,8 +40,8 @@
 			font-size: rem(8);
 		}
 
-		@media (any-hover: hover){
-			&:hover{
+		@media (any-hover: hover) {
+			&:hover {
 				color: $btnColor;
 			}
 		}

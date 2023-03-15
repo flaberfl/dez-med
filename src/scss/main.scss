@@ -40,10 +40,16 @@
     text-transform: uppercase;
 
     span {
+      width: 100%;
+
       @include adaptiveValue("font-size", 36, 16);
       text-transform: lowercase;
       color: #FFFEFE;
       font-weight: 300;
+
+      @media (max-width:$mobile) {
+        //  display: block; 
+      }
     }
   }
 
@@ -54,18 +60,14 @@
     column-gap: rem(24);
     row-gap: rem(9);
 
-    @media (max-width:$mobile){
-       flex-direction: column;
-       align-items: start;
+    @media (max-width:$mobile) {
+      flex-direction: column;
+      align-items: start;
     }
   }
 
   /* .main__button */
-  &__button {
-
-    /* .main__button_tr */
-    &_tr {}
-  }
+  &__button {}
 
   /* .main__services */
   &__services {
@@ -78,6 +80,5 @@
     @media (max-width:$mobile) {
       padding-top: rem(35);
     }
-
   }
 }
