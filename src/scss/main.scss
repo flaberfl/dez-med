@@ -1,14 +1,37 @@
 .main {
-  background: url('@img/bg.jpg') 0 / cover no-repeat;
+  background: url('@img/bg.jpg') right / cover no-repeat;
+  position: relative;
+  @include adaptiveValue("padding-top", 100, 194);
+  @include adaptiveValue("padding-bottom", 100, 212);
 
   /* .main__container */
-  &__container {}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    height: 100%;
+
+  }
 
   /* .main__body */
   &__body {
+    // position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    // justify-content: space-between;
+    // align-items: center;
+    // height: 800px;
+    z-index: 2;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    // z-index: -1;
   }
 
   /* .main__content */
@@ -17,20 +40,18 @@
   /* .main__title */
   &__title {
     font-family: Open Sans;
-    font-size: rem(36);
-    font-weight: 800;
+    @include adaptiveValue("font-size", 36, 20);
+    font-weight: 700;
     line-height: math.div(49, 36);
     color: #fff;
     text-transform: uppercase;
-  }
-
-  /* .main__subtitle */
-  &__subtitle {
-    font-family: Open Sans;
-    font-weight: 300;
-    font-size: rem(36);
-    line-height: math.div(49, 36);
-    color: #FFFEFE;
+    
+    span {
+      @include adaptiveValue("font-size", 36, 16);
+      text-transform: lowercase;
+      color: #FFFEFE;
+      font-weight: 300;
+    }
   }
 
   /* .main__buttons */
@@ -49,75 +70,4 @@
     flex-direction: column;
     gap: rem(45);
   }
-
-  /* .main__promo */
-  &__promo {}
-}
-
-.button {}
-
-.promo-main {
-
-  /* .promo-main__list */
-  &__list {}
-
-  /* .promo-main__time */
-  &__time {}
-
-  /* .promo-main__production */
-  &__production {}
-
-  /* .promo-main__contacts */
-  &__contacts {}
-}
-
-.time-promo-main {
-
-  /* .time-promo-main__title */
-  &__title {}
-
-  /* .time-promo-main__list */
-  &__list {}
-
-  /* .time-promo-main__item */
-  &__item {}
-
-  /* .time-promo-main__days */
-  &__days {}
-
-  /* .time-promo-main__hourse */
-  &__hourse {}
-}
-
-.production-promo-main {
-
-  /* .production-promo-main__title */
-  &__title {}
-
-  /* .production-promo-main__text */
-  &__text {}
-}
-
-.contacts-promo-main {
-
-  /* .contacts-promo-main__title */
-  &__title {}
-}
-
-.contacs-promo-main {
-
-  /* .contacs-promo-main__list */
-  &__list {}
-
-  /* .contacs-promo-main__item */
-  &__item {}
-
-  /* .contacs-promo-main__phone */
-  &__phone {}
-
-  /* .contacs-promo-main__adress */
-  &__adress {}
-
-  /* .contacs-promo-main__mail */
-  &__mail {}
 }

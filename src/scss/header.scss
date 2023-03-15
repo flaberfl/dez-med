@@ -1,22 +1,25 @@
 //====================================================================================================
 
 .header {
-  height: rem(52);
-  background-color: #fff;
-  background: rgba(255, 255, 255, 0.22);
-  position: absolute;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
+
+  background: rgba(255, 255, 255, 0.22);
+
   z-index: 50;
+
+  @media (max-width:$mobile) {
+    background-color: $headerColor;
+  }
 
   /* .header__container */
   &__container {
+    @include adaptiveValue("height", 52, 92);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: rem(34);
   }
 
   &__logo {
@@ -39,41 +42,27 @@
     &__body {
       @media (max-width:$mobile) {
         position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        width: rem(250);
         height: 100%;
         top: 0;
-        left: -100%;
-        @include adaptiveValue("padding-top", 180, 120, 768, 320, 2);
-        padding-left: rem(15);
+        right: -100%;
+
+        padding-top: rem(10);
+        padding-left: rem(36);
         padding-right: rem(15);
-        padding-bottom: rem(30);
+        padding-bottom: rem(20);
 
         overflow: auto;
-        background-color: gray; // цвет меню
-        transition: all 0.3s ease 0s;
-
-        // Плашка
-        &::before {
-          content: '';
-          position: fixed;
-          z-index: 2;
-          width: 100%;
-          top: 0;
-          left: -100%;
-          @include adaptiveValue("height", 100, 56, 768, 320, 2); // адаптируем плашку
-
-          background-color: silver; // цвет плашки
-          transition: all 0.3s ease 0s;
-        }
+        background: rgba(71, 121, 184, 0.97); // цвет меню
+        transition: all 0.6s ease-in-out .0s;
 
         .menu-open & {
-          left: 0;
+          right: 0;
+
+          // transition: .6s;
 
           &::before {
-            left: 0;
+            right: 0;
           }
         }
       }
@@ -81,22 +70,39 @@
 
     &__list {
       display: flex;
-      // justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      row-gap: rem(10);
       @include adaptiveValue("column-gap", 80, 15);
 
       @media (max-width:$mobile) {
         flex-direction: column;
-        row-gap: rem(30);
+        row-gap: rem(28);
 
-        text-align: center;
+        text-align: left;
       }
     }
 
     /* .menu__item */
-    &__item {}
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: rem(15);
+
+
+
+      &:first-child {
+        margin-bottom: rem(30);
+
+        font-size: rem(12);
+        color: #fff;
+        line-height: math.div(20, 12);
+
+        @media (min-width:$mobile) {
+          display: none;
+        }
+      }
+
+
+
+    }
 
     /* .menu__link */
     &__link {
@@ -105,7 +111,7 @@
       color: #fff;
 
       @media (max-width:$mobile) {
-        font-size: rem(30);
+        font-size: rem(20);
       }
 
       transition: color 0.3s ease 0s;
@@ -119,6 +125,25 @@
   }
 }
 
+
+.menu {
+
+  /* .menu__mobile-list */
+  &__mobile-list {}
+}
+
+.mobile-list {
+
+  p
+
+  /* .mobile-list__item */
+  &__item {}
+
+  /* .mobile-list__link */
+  &__link {}
+}
+
+
 //====================================================================================================
 
 //Burger
@@ -129,8 +154,8 @@
   @media (max-width: $mobile) {
     display: block;
     position: relative;
-    width: rem(27);
-    height: rem(24);
+    width: rem(43);
+    height: rem(32);
     cursor: pointer;
     z-index: 999;
 
@@ -142,9 +167,8 @@
       left: 0px;
       position: absolute;
       width: 100%;
-      height: rem(4);
-      border-radius: rem(8);
-      background-color: #000;
+      height: rem(3);
+      background-color: #fff;
     }
 
     &::before {
@@ -160,13 +184,16 @@
     }
 
     .menu-open & {
+      width: 26px;
+      height: 26px;
+
       span {
         transform: scale(0);
       }
 
       &::before {
         transform: rotate(-45deg);
-        top: calc(50% - 2px);
+        top: calc(50% - 1px);
       }
 
       &::after {

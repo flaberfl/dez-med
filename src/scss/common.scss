@@ -1,7 +1,6 @@
 // Заголовки, общие БЄМ блоки и проче...
 
-.title {
-}
+.title {}
 
 // .body-grid {
 //   display: grid;
@@ -33,3 +32,26 @@
 //     }
 //   }
 // }
+
+.vhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.mobile-hidden {
+  @media (max-width:$mobile) {
+    display: none !important;
+  }
+}
+
+.desktop-hidden {
+  @media (min-width:$mobile) {
+    display: none !important;
+  }
+}
