@@ -55,7 +55,7 @@
 
     &__list {
       display: flex;
-      @include adaptiveValue("column-gap", 80, 15);
+      @include adaptiveValue("column-gap", 92, 15);
 
       @media (max-width:$mobile) {
         flex-direction: column;

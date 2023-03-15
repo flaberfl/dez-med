@@ -40,16 +40,11 @@
     text-transform: uppercase;
 
     span {
-      width: 100%;
-
+      display: inline-block;
       @include adaptiveValue("font-size", 36, 16);
       text-transform: lowercase;
       color: #FFFEFE;
       font-weight: 300;
-
-      @media (max-width:$mobile) {
-        //  display: block; 
-      }
     }
   }
 
@@ -86,6 +81,9 @@
 //========================================================================================================================================================
 
 .contacts {
+  margin-top: rem(-28);
+  position: relative;
+  z-index: 10;
 
   /* .contacts__container */
   &__container {}
@@ -109,11 +107,11 @@
   /* .contacts__time */
   &__item {
     padding-top: rem(12);
-  padding-bottom: rem(40);
+    padding-bottom: rem(40);
 
     border-bottom: rem(5) solid #54A3C1;
-    
-    @media (max-width:$mobile){
+
+    @media (max-width:$mobile) {
       border-bottom: rem(2) solid #54A3C1;
     }
 
@@ -141,7 +139,7 @@
     margin-bottom: rem(5);
 
     font-size: rem(24);
-    // font-weight: 600;
+    font-weight: 600;
     line-height: math.div(40, 24);
     color: $blueGreenColor;
   }
@@ -178,7 +176,7 @@
   /* .time-contacts__days */
   &__days {
     font-size: rem(14);
-    font-weight: 500;
+    font-weight: 600;
     line-height: math.div(24, 14);
   }
 
@@ -212,7 +210,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: rem(24);
+    gap: rem(15);
   }
 
   /* .contact-contacts__item */
@@ -242,6 +240,8 @@
 
 .contact-contacts {
   font-size: rem(16);
+
+
 
   /* .ccontact-contacts__title */
   &__title {}
