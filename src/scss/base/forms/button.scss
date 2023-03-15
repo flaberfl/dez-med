@@ -52,4 +52,17 @@
 			background-color: rgba(255, 255, 255, .8);
 		}
 	}
+
+	&_main {
+		padding: rem(12) rem(25);
+
+		background-color: $btnColor;
+		color: #fff;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #5e97df;
+			}
+		}
+	}
 }

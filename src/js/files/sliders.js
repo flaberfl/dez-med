@@ -8,7 +8,8 @@
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
 import Swiper, {
-	Navigation
+	Navigation,
+	Pagination
 } from 'swiper';
 /*
 Основниые модули слайдера:
@@ -48,12 +49,12 @@ function initSliders() {
 
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.swiper')) { // Указываем класс нужного слайдера
+	if (document.querySelector('.swiper__types')) { // Указываем класс нужного слайдера
 		// Создаем слайдер
 		new Swiper('.swiper', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			//modules: [Navigation, Pagination],
+			modules: [Navigation, Pagination],
 			/*
 			effect: 'fade',
 			autoplay: {
@@ -63,7 +64,7 @@ function initSliders() {
 			*/
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
+			slidesPerView: 3,
 			spaceBetween: 0,
 			autoHeight: true,
 			speed: 800,
@@ -73,16 +74,16 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
-			//pagination: {
-			//	el: '.slider-quality__pagging',
-			//	clickable: true,
-			//},
+			pagination: {
+				el: '.slider-quality__pagging',
+				clickable: true,
+			},
 			// Arrows
 			navigation: {
 				nextEl: '.about__more .more__item_next',
 				prevEl: '.about__more .more__item_prev',
 			},
-			/*
+
 			breakpoints: {
 				320: {
 					slidesPerView: 1,
@@ -90,7 +91,7 @@ function initSliders() {
 					autoHeight: true,
 				},
 				768: {
-					slidesPerView: 2,
+					slidesPerView: 1,
 					spaceBetween: 20,
 				},
 				992: {
@@ -102,7 +103,7 @@ function initSliders() {
 					spaceBetween: 30,
 				},
 			},
-			*/
+
 			on: {
 
 			}

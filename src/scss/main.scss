@@ -261,3 +261,131 @@
 
 //========================================================================================================================================================
 
+
+.type-hospital {
+
+  /* .type-hospital__page */
+  &__page {}
+
+  /* .type-hospital__container */
+  &__container {}
+
+  /* .type-hospital__title */
+  &__title {}
+
+  /* .type-hospital__list */
+  &__list {
+    display: flex;
+    @include adaptiveValue("column-gap", 63, 20);
+  }
+
+  /* .type-hospital__item */
+  &__item {}
+}
+
+.title {
+
+  /* .title_type */
+  &_type {}
+}
+
+.item-type-hospital {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: rem(20);
+
+  background-color: #fff;
+
+  transition: all 0.3s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  /* .item-type-hospital_1 */
+  &_1 {}
+
+  /* .item-type-hospital__header */
+  &__header {
+    display: grid;
+    gap: rem(22);
+    padding: rem(36) rem(14) rem(38);
+    text-align: center;
+    justify-items: center;
+
+    border-bottom: 5px solid rgba(42, 147, 202, 0.5);
+  }
+
+  /* .item-type-hospital__image */
+  &__image {}
+
+  /* .item-type-hospital__title */
+  &__title {
+    font-size: rem(20);
+    font-weight: 400;
+    line-height: math.div(24, 20);
+    color: $titleColor;
+  }
+
+  /* .item-type-hospital__text */
+  &__text {
+    font-size: rem(10);
+    line-height: math.div(17, 10);
+
+    text-align: left;
+  }
+
+  /* .item-type-hospital__list */
+  &__list {
+    padding: rem(11) rem(36) rem(20) rem(37);
+
+    @include adaptiveValue("padding-left", 37, 26);
+
+    flex: 1 1 auto;
+
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  /* .item-type-hospital__row */
+  &__row {
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  /* .item-type-hospital__button */
+  &__button {}
+}
+
+.row-item-type {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+
+
+  /* .row-item-type__image */
+  &__image {}
+
+  /* .row-item-type__body */
+  &__body {}
+
+  /* .row-item-type__title */
+  &__title {
+    font-size: rem(14);
+    line-height: math.div(24, 14);
+    color: $blueGreenColor;
+  }
+
+  /* .row-item-type__text */
+  &__text {
+    font-size: rem(10);
+    line-height: math.div(17, 10);
+  }
+}
+
+.button {}
