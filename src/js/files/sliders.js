@@ -88,13 +88,73 @@ function initSliders() {
 				320: {
 					slidesPerView: 1,
 					spaceBetween: 0,
-					autoHeight: true,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+				},
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 60,
+				},
+				// 1268: {
+				// 	slidesPerView: 4,
+				// 	spaceBetween: 30,
+				// },
+			},
+
+			on: {
+
+			}
+		});
+	}
+	if (document.querySelector('.swiper__sets')) { // Указываем класс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.swiper', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation],
+			/*
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 70,
+			// autoHeight: true,
+			speed: 800,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+			// Dotts
+			// pagination: {
+			// 	el: '.swiper-pagination',
+			// 	clickable: true,
+			// },
+			// Arrows
+			navigation: {
+				nextEl: '.swiper-types-btn_next',
+				prevEl: '.swiper-types-btn_prev',
+			},
+
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					// autoHeight: true,
 				},
 				768: {
 					slidesPerView: 2,
 					spaceBetween: 20,
 				},
 				992: {
+					enabled: true,
 					slidesPerView: 3,
 					spaceBetween: 20,
 				},
