@@ -9,8 +9,8 @@ import {
 
 
 
-let mql = window.matchMedia('(max-width: 600px)');
+// let mql = window.matchMedia('(max-width: 600px)');
 
-document.querySelector(".mq-value").innerText = mql.matches;
+// document.querySelector(".mq-value").innerText = mql.matches;
 
-console.log(mql);
+// console.log(mql);

@@ -75,7 +75,7 @@ function initSliders() {
 			//lazy: true,
 			// Dotts
 			pagination: {
-				el: '.swiper-pagination',
+				el: '.swiper-pagination-types',
 				clickable: true,
 			},
 			// Arrows
@@ -155,13 +155,13 @@ function initSliders() {
 				},
 				992: {
 					enabled: true,
-					slidesPerView: 3,
-					spaceBetween: 20,
+					slidesPerView: 2,
+					spaceBetween: 70,
 				},
-				// 1268: {
-				// 	slidesPerView: 4,
-				// 	spaceBetween: 30,
-				// },
+				1268: {
+					slidesPerView: 3,
+					spaceBetween: 70,
+				},
 			},
 
 			on: {
