@@ -379,7 +379,7 @@
 
   /* .row-item-type__title */
   &__title {
-    font-size: rem(14);
+    @include adaptiveValue("font-size", 14, 10);
     line-height: math.div(24, 14);
     color: $blueGreenColor;
   }
@@ -397,6 +397,8 @@
   align-items: center;
   justify-content: center;
   width: rem(35);
+  @include adaptiveValue("width", 35, 72);
+  @include adaptiveValue("height", 32, 66);
   height: rem(32);
   top: 60%;
 
@@ -409,13 +411,25 @@
     background: rgba(42, 147, 202, 1);
   }
 
-  &_next {
-    right: rem(-24);
+  @media (max-width:$mobileSmall) {
+    top: 50%;
+  }
 
+  &_next {
+    right: 0;
+
+    @media (min-width:em(1280)) {
+      right: rem(-24);
+
+    }
   }
 
   &_prev {
-    left: rem(-24);
+    left: 0;
+
+    @media (min-width:em(1280)) {
+      left: rem(-24);
+    }
   }
 
   &.swiper-button-disabled {
