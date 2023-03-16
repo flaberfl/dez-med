@@ -317,6 +317,7 @@
     padding: rem(36) rem(14) rem(38);
     text-align: center;
     justify-items: center;
+    width: 100%;
 
     background-color: $bgColor;
 
@@ -420,7 +421,6 @@
 
     @media (min-width:em(1280)) {
       right: rem(-24);
-
     }
   }
 
@@ -435,5 +435,27 @@
   &.swiper-button-disabled {
     opacity: 0;
   }
+}
 
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: rem(20) 0 0 0;
+
+}
+
+.swiper-pagination-bullet {
+  height: rem(14);
+  width: rem(14);
+  border-radius: 50%;
+  border: rem(2) solid $btnColor;
+  cursor: pointer;
+
+  transition: all 0.3s ease 0s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $blueGreenColor;
 }

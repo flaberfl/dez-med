@@ -75,7 +75,7 @@ function initSliders() {
 			//lazy: true,
 			// Dotts
 			pagination: {
-				el: '.slider-quality__pagging',
+				el: '.swiper-pagination',
 				clickable: true,
 			},
 			// Arrows
