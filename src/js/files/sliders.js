@@ -65,8 +65,8 @@ function initSliders() {
 			observer: true,
 			observeParents: true,
 			slidesPerView: 3,
-			spaceBetween: 0,
-			autoHeight: true,
+			spaceBetween: 60,
+			// autoHeight: true,
 			speed: 800,
 			//touchRatio: 0,
 			//simulateTouch: false,
@@ -80,8 +80,8 @@ function initSliders() {
 			},
 			// Arrows
 			navigation: {
-				nextEl: '.about__more .more__item_next',
-				prevEl: '.about__more .more__item_prev',
+				nextEl: '.swiper-types-btn_next',
+				prevEl: '.swiper-types-btn_prev',
 			},
 
 			breakpoints: {
@@ -98,10 +98,10 @@ function initSliders() {
 					slidesPerView: 3,
 					spaceBetween: 20,
 				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
+				// 1268: {
+				// 	slidesPerView: 4,
+				// 	spaceBetween: 30,
+				// },
 			},
 
 			on: {

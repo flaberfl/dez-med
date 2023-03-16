@@ -268,15 +268,17 @@
   &__page {}
 
   /* .type-hospital__container */
-  &__container {}
+  &__container {
+    position: relative;
+  }
 
   /* .type-hospital__title */
   &__title {}
 
   /* .type-hospital__list */
   &__list {
-    display: flex;
-    @include adaptiveValue("column-gap", 63, 20);
+    // display: flex;
+    // @include adaptiveValue("column-gap", 63, 20);
   }
 
   /* .type-hospital__item */
@@ -316,6 +318,8 @@
     text-align: center;
     justify-items: center;
 
+    background-color: $bgColor;
+
     border-bottom: 5px solid rgba(42, 147, 202, 0.5);
   }
 
@@ -341,10 +345,9 @@
   /* .item-type-hospital__list */
   &__list {
     padding: rem(11) rem(36) rem(20) rem(37);
-
     @include adaptiveValue("padding-left", 37, 26);
-
     flex: 1 1 auto;
+    width: 100%;
 
     &:not(:last-child) {
       margin-bottom: rem(20);
@@ -384,8 +387,39 @@
   /* .row-item-type__text */
   &__text {
     font-size: rem(10);
-    line-height: math.div(17, 10);
+    line-height: math.div(10, 7);
   }
 }
 
-.button {}
+.swiper-types-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(35);
+  height: rem(32);
+  top: 60%;
+
+  border-radius: 1px;
+  background: rgba(42, 147, 202, 0.8);
+
+  transition: all .3s ease 0s;
+
+  &:hover {
+    background: rgba(42, 147, 202, 1);
+  }
+
+  &_next {
+    right: rem(-24);
+
+  }
+
+  &_prev {
+    left: rem(-24);
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0;
+  }
+
+}
