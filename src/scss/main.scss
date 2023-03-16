@@ -459,3 +459,169 @@
 .swiper-pagination-bullet-active {
   background-color: $blueGreenColor;
 }
+
+
+//========================================================================================================================================================
+
+.sets {
+
+  /* .sets__container */
+  &__container {}
+
+  /* .sets__title */
+  &__title {}
+
+  /* .sets__body */
+  &__body {}
+
+  /* .sets__list */
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* .sets__item */
+  &__item {
+    max-width: rem(325);
+  }
+}
+
+.title {
+
+  /* .title_sets */
+  &_sets {}
+}
+
+.item-sets {
+  &:hover {
+    .item-sets__list {
+      opacity: 1;
+    }
+  }
+
+  /* .item-sets__body */
+  &__body {
+    position: relative;
+  }
+
+  /* .item-sets__list */
+  &__list {
+    opacity: 0;
+    transition: all .8s ease 0s;
+  }
+
+  /* .item-sets__item */
+  &__item {
+    @include adaptiveValue("font-size", 12, 7);
+    font-weight: 400;
+    line-height: math.div(24, 12);
+
+    span {
+      @include adaptiveValue("font-size", 14, 9);
+      font-weight: 700;
+      color: $blueGreenColor;
+      line-height: math.div(28, 14);
+    }
+  }
+
+  /* .item-sets__image */
+  &__image {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background-color: #fff;
+
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  /* .item-sets__footer */
+  &__footer {}
+}
+
+.list-item-sets {
+  display: flex;
+  flex-direction: column;
+  padding: rem(8) rem(70) rem(12) rem(18);
+  row-gap: rem(6);
+  // overflow-y: scroll;
+  background: rgba(255, 255, 255, 0.9);
+
+}
+
+.footer-item-sets {
+  display: grid;
+  row-gap: rem(30);
+  padding: rem(17) rem(12) rem(12) rem(14);
+
+  background-color: #54a3c1;
+
+  color: #fff;
+
+  /* .footer-item-sets__top */
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  /* .footer-item-sets__title */
+  &__title {
+    text-transform: uppercase;
+  }
+
+  /* .footer-item-sets__name */
+  &__name {
+    display: inline-block;
+    padding-bottom: rem(6);
+
+    border-bottom: 1px solid #fff;
+
+    @include adaptiveValue("font-size", 18, 12);
+    line-height: math.div(18, 12);
+  }
+
+  /* .footer-item-sets__type */
+  &__type {
+    padding-top: rem(6);
+
+    @include adaptiveValue("font-size", 20, 18);
+    font-weight: 600;
+    line-height: math.div(30, 20);
+  }
+
+  /* .footer-item-sets__hospital */
+  &__hospital {}
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: rem(40);
+  }
+}
+
+.hospital-item-sets {
+  display: grid;
+  align-items: center;
+  row-gap: rem(5);
+  justify-items: center;
+  max-width: rem(76);
+
+  text-align: center;
+
+  /* .hospital-item-sets__image */
+  &__image {}
+
+  /* .hospital-item-sets__name */
+  &__name {}
+}

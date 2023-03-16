@@ -23,7 +23,8 @@
   }
 
   &_type,
-  &_solution {
+  &_solution,
+  &_sets {
     &::after {
       width: rem(257);
     }
