@@ -261,7 +261,6 @@
 
 //========================================================================================================================================================
 
-
 .type-hospital {
 
   /* .type-hospital__page */
@@ -300,6 +299,13 @@
   background-color: #fff;
 
   transition: all 0.3s ease 0s;
+  width: 100%;
+
+  @media (max-width:$mobile) {
+    // width: rem(312) !important;
+
+  }
+
 
   @media (any-hover: hover) {
     &:hover {
@@ -392,7 +398,8 @@
   }
 }
 
-.swiper-types-btn {
+.swiper-types-btn,
+swiper-sets-btn {
   position: absolute;
   display: flex;
   align-items: center;
@@ -479,16 +486,37 @@
 
   /* .sets__list */
   &__list {
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // column-gap: rem(70);
-    // @include adaptiveValue("column-gap", 70, 20);
+    display: flex;
+    @include adaptiveValue("gap", 60, 20);
+
+    @media (max-width:$tablet) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (max-width:$mobile) {
+      // width: rem(325);
+      margin: 0 auto;
+
+      margin-top: rem(90);
+    }
   }
 
   /* .sets__item */
   &__item {
-    max-width: rem(325);
+    // justify-self: center;
+    // width: rem(325);
+
+    // background-color: #fff;
+
+    @media (max-width:$tablet) {}
+
+    @media (max-width:$mobile) {
+      max-width: rem(312);
+    }
+
   }
+
 }
 
 .title {
@@ -498,6 +526,8 @@
 }
 
 .item-sets {
+  width: rem(325);
+
   &:hover {
     .item-sets__list {
       opacity: 1;
@@ -507,6 +537,8 @@
   /* .item-sets__body */
   &__body {
     position: relative;
+    // height: 100%;
+    width: 100%;
   }
 
   /* .item-sets__list */
@@ -538,13 +570,19 @@
     height: 100%;
     top: 0;
     left: 0;
+    // right: 0;
     z-index: -1;
+
 
     background-color: #fff;
 
-
     img {
       max-width: 100%;
+      margin: 0 auto;
+
+      @media (max-width:$tablet) {
+        max-width: 60%;
+      }
     }
   }
 
