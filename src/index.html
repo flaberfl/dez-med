@@ -4710,7 +4710,30 @@
 
 			<section class="page__submit submit">
 				<div class="submit__container">
-					<form action="#"></form>
+					<form action="#" class="form submit__form">
+
+						<h2 class="form__title">Оставить заявку</h2>
+
+						<div class="form__item">
+							<input autocomplete="off" type="text" name="name" data-required data-error="Не заполненное поле!"
+								placeholder="Имя" class="form__input input">
+						</div>
+
+						<div class="form__item">
+							<input autocomplete="off" type="text" name="phone" data-required data-error="Не заполненное поле!"
+								placeholder="Номер телефона" class="form__input input">
+						</div>
+
+						<div class="form__item">
+							<input autocomplete="off" type="text" name="mail" data-required data-error="Не заполненное поле!"
+								placeholder="E-mail" class="form__input input">
+						</div>
+
+						<div class="form__item">
+							<button type="submit" class="form__button button button_type">Отправить</button>
+						</div>
+
+					</form>
 				</div>
 			</section>
 

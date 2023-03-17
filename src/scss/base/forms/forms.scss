@@ -1,19 +1,51 @@
 //<FORM>
 // Снипет (HTML):
 .form {
-	&__row {
+	display: grid;
+	padding: rem(40) rem(40) rem(67);
+	width: 100%;
+
+	gap: rem(32);
+	max-width: rem(490);
+
+	background: $btnColor;
+
+	text-align: center;
+	color: #fff;
+
+	&__row {}
+
+	&__column {}
+
+	&__item {}
+
+	&__title {
+		font-size: rem(24);
 	}
-	&__column {
-	}
-	&__line {
-	}
+
 	&__input {
+
+		width: 100%;
+		height: rem(39);
+		padding-left: rem(18);
+
+		border-bottom: 1px solid #fff;
+
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.58);
+
+		}
+
+		background-color: transparent;
 	}
+
 	&__button {
+		margin-top: rem(30);
 	}
-	&__error {
-	}
+
+	&__error {}
 }
+
 //</FORM>
 
 // <BUTTONS>

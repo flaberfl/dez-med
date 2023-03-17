@@ -9,7 +9,7 @@
 // Пример: { Navigation, Autoplay }
 import Swiper, {
 	Navigation,
-	Pagination
+	// Pagination
 } from 'swiper';
 /*
 Основниые модули слайдера:
@@ -54,7 +54,7 @@ function initSliders() {
 		new Swiper('.swiper__types', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Pagination],
+			modules: [Navigation],
 			/*
 			effect: 'fade',
 			autoplay: {

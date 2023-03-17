@@ -1,6 +1,6 @@
 // Заголовки, общие БЄМ блоки и проче...
 [class*="page__"] {
-  @include adaptiveValue("padding-bottom", 90, 55);
+  // @include adaptiveValue("padding-bottom", 90, 55);
 }
 
 .title {
