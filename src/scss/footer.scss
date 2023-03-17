@@ -1,3 +1,77 @@
 //====================================================================================================
 
+
 //====================================================================================================
+
+.footer {
+  font-family: "Lato";
+  display: flex;
+  @include adaptiveValue("height", 182, 51);
+  padding: rem(10);
+
+
+
+  color: #fff;
+  background-color: #4A7BB9;
+
+  /* .footer__container */
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width:$tablet) {}
+  }
+
+  /* .footer__logo */
+  &__logo {
+    @media (max-width:$mobileSmall) {
+      display: none;
+    }
+  }
+
+  /* .footer__contacts */
+  &__contacts {
+    @include adaptiveValue("font-size", 16, 5);
+  }
+
+  /* .footer__services */
+  &__services {
+    display: grid;
+    gap: rem(22);
+
+    @media (max-width:$mobile) {
+      display: none;
+    }
+  }
+
+  .logo {}
+
+  .contacts-footer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+    /* .contacts-footer__item */
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: rem(10);
+
+      @include adaptiveValue("font-size", 16, 10);
+    }
+
+    /* .contacts-footer__phone" */
+    &__phone {}
+
+    /* .contacts-footer__adress */
+    &__adress {}
+
+    /* .contacts-footer__mail */
+    &__mail {}
+  }
+}
