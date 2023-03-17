@@ -4,6 +4,8 @@
 .button {
 	display: inline-flex;
 	padding: 0px 0px;
+	align-items: center;
+	justify-content: center;
 
 	text-transform: uppercase;
 	border-radius: rem(2);
@@ -80,5 +82,9 @@
 				background-color: #5e97df;
 			}
 		}
+	}
+
+	&_more {
+width: 100%;
 	}
 }

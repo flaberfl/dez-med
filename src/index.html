@@ -32,7 +32,7 @@
 				</div>
 			</section>
 
-			<section class="contacts__page contacts">
+			<section class="page__contacts contacts">
 				<div class="contacts__container">
 					<h2 class="vhidden">Контакты</h2>
 					<ul class="contacts__list">
@@ -104,7 +104,7 @@
 				</div>
 			</section>
 
-			<section class="type-hospital__page type-hospital">
+			<section class="page__type-hospital type-hospital">
 				<div class="type-hospital__container">
 					<h2 class="type-hospital__title title title_type">По типу медицинских учереждений</h2>
 					<div class="swiper swiper__types">
@@ -647,7 +647,7 @@
 					<h2 class="catalog__title title title_cat">Каталог продукции</h2>
 
 					<div data-tabs class="catalog__body">
-						<nav data-tabs-titles class="catalog__header header-catalog">
+						<nav data-tabs-titles class="catalog__header header-catalog" data-da1=".menu__body,768">
 
 							<button type="button" class="header-catalog__title _tab-active">
 								<img src="@img/catalog/title-01.png" alt="Концентраты" class="header-catalog__image">
@@ -685,7 +685,7 @@
 						</nav>
 
 						<div data-tabs-body class="tabs__content catalog__body">
-							<div class="tabs__body">
+							<div data-showmore data-showmore-media="768,max" class="tabs__body">
 								<div class="catalog-breadcrumbs">
 									<ul class="catalog-breadcrumbs__list">
 										<li class="catalog-breadcrumbs__item">Каталог</li>
@@ -693,7 +693,7 @@
 									</ul>
 								</div>
 
-								<div class="catalog__products">
+								<div data-showmore-content="1100" class="catalog__products">
 
 									<div class="catalog__product catalog__product_1 product">
 
@@ -1168,6 +1168,12 @@
 										</div>
 									</div>
 								</div>
+
+								<button hidden data-showmore-button type="button" class="button button_more">
+									<span>загрузить еще</span>
+									<span>скрыть</span>
+								</button>
+
 
 							</div>
 							<div class="tabs__body">
