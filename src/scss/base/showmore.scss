@@ -5,27 +5,32 @@
 [data-showmore-button] {
 
 
-	height: rem(18);
-	width: rem(90);
+	@media (max-width:$mobile) {
 
-	border: 1px solid $btnColor;
+		height: rem(18);
+		width: rem(90);
 
+		border: 1px solid $btnColor;
 
-	color: $btnColor;
-	font-size: rem(5);
-	line-height: math.div(6, 5);
+		color: $btnColor;
+		font-size: rem(10);
+		line-height: math.div(6, 5);
+		text-transform: uppercase;
 
-	span {
-		&:last-child {
-			display: none;
-		}
-
-		._showmore-active & {
-			display: none;
-
+		span {
 			&:last-child {
-				display: block;
+				display: none;
+			}
+
+			._showmore-active & {
+				display: none;
+
+				&:last-child {
+					display: block;
+				}
 			}
 		}
 	}
+
+
 }

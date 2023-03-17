@@ -36,6 +36,12 @@
       width: rem(150);
     }
   }
+
+  &_70 {
+    &::after {
+      width: rem(70);
+    }
+  }
 }
 
 // .body-grid {
