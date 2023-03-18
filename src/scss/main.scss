@@ -489,36 +489,14 @@ swiper-sets-btn {
 
   /* .sets__list */
   &__list {
-    // display: flex;
-    // @include adaptiveValue("gap", 60, 20);
-
-    @media (max-width:$tablet) {
-      // flex-wrap: wrap;
-      // justify-content: center;
-    }
 
     @media (max-width:$mobile) {
-      // width: rem(325);
-      margin: 0 auto;
-
-      margin-top: rem(90);
+      margin-top: rem(60);
     }
   }
 
   /* .sets__item */
-  &__item {
-    // justify-self: center;
-    // width: rem(325);
-
-    // background-color: #fff;
-
-    // @media (max-width:$tablet) {}
-
-    // @media (max-width:$mobile) {
-    //   max-width: rem(312);
-    // }
-
-  }
+  &__item {}
 
 }
 
@@ -529,7 +507,6 @@ swiper-sets-btn {
 }
 
 .item-sets {
-  // width: rem(325);
 
   &__wrapper {
     width: rem(312);
