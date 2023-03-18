@@ -275,10 +275,7 @@
   &__title {}
 
   /* .type-hospital__list */
-  &__list {
-    // display: flex;
-    // @include adaptiveValue("column-gap", 63, 20);
-  }
+  &__list {}
 
   /* .type-hospital__item */
   &__item {}
@@ -563,6 +560,10 @@ swiper-sets-btn {
 
     background-color: #fff;
 
+    &>* {
+      display: flex;
+    }
+
     img {
       max-width: 100%;
       margin: 0 auto;
@@ -736,10 +737,6 @@ swiper-sets-btn {
   }
 
   @media (max-width:$mobile) {
-    // display: none;
-  }
-
-  @media (max-width:$mobile) {
     position: relative;
     display: grid;
     gap: rem(10);
@@ -810,51 +807,8 @@ swiper-sets-btn {
 
         font-weight: 600;
 
-        // border-bottom: rem(3) solid #335989;
       }
     }
-
-
-
-    // .mobile-list {
-    //   position: relative;
-    //   display: grid;
-    //   gap: rem(10);
-    //   padding: rem(18) 0;
-
-    //   &::before,
-    //   &::after {
-    //     content: '';
-    //     position: absolute;
-    //     width: rem(200);
-    //     height: rem(1);
-    //     left: -4%;
-
-    //     background: rgba(255, 255, 255, 0.5);
-    //   }
-
-    //   &::before {
-    //     bottom: 0;
-    //   }
-
-    //   &::after {
-    //     top: 0;
-    //   }
-
-    //   /* .mobile-list__link */
-    //   &__link {
-    //     font-size: rem(10);
-    //     color: #161616;
-
-    //     &:hover {
-    //       font-weight: 700;
-    //       text-decoration: underline;
-    //     }
-    //   }
-    // }
-
-
-
   }
 
   /* .header-catalog__image */
@@ -866,22 +820,11 @@ swiper-sets-btn {
   }
 }
 
-.tabs {
-
-  /* .tabs__content */
-  &__content {}
-
-  /* .tabs__body */
-  &__body {}
-}
-
 .product {
 
   /* .product__body */
   &__body {
     position: relative;
-    // width: 100%;
-    // height: 100%;
     text-align: center;
 
     &:hover {
@@ -995,29 +938,17 @@ swiper-sets-btn {
 
 .catalog-breadcrumbs {
 
-  // padding: rem(35) rem(0);
   @include adaptiveValue("padding-top", 20, 0);
   @include adaptiveValue("padding-bottom", 35, 20);
-
-  /* .catalog-breadcrumbs__list */
-  &__list {
-    // display: flex;
-    // gap: rem(38);
-  }
 
   /* .catalog-breadcrumbs__item */
   &__item {
     position: relative;
     display: inline-block;
     padding-right: rem(38);
-    // display: flex;
-    // align-items: center;
-    // gap: rem(7);
 
     color: $btnColor;
     line-height: math.div(17, 14);
-
-    // flex-direction: column;
 
     &:not(:last-child) {
       &::after {
@@ -1069,11 +1000,6 @@ swiper-sets-btn {
     min-width: rem(40);
   }
 
-  /* .list-product__name */
-  &__name {
-    // max-width: rem(114);
-  }
-
   &__button {
     justify-self: center;
     align-self: start;
@@ -1091,17 +1017,6 @@ swiper-sets-btn {
   &__container {
     position: relative;
   }
-
-  /* .docs__title */
-  &__title {}
-
-  /* .docs__slider */
-  &__slider {
-    // position: relative;
-  }
-
-  /* .docs__wrapper */
-  &__wrapper {}
 
   /* .docs__slide */
   &__slide {
@@ -1135,9 +1050,6 @@ swiper-sets-btn {
 
 .title {
   @include adaptiveValue("padding-top", 96, 47);
-
-  /* .title_doc */
-  &_doc {}
 }
 
 //========================================================================================================================================================
@@ -1238,19 +1150,7 @@ swiper-sets-btn {
   }
 }
 
-
-
-
 //========================================================================================================================================================
-
-
-
-
-.page {
-
-  /* .page__submit */
-  &__submit {}
-}
 
 .submit {
 
@@ -1263,34 +1163,9 @@ swiper-sets-btn {
     justify-content: center;
     // justify-content: center;
   }
-
-  /* .submit__form */
-  &__form {
-    // display: inline-block;
-    // width: 100%;
-    // height: 100%;
-  }
 }
-
-.form {
-
-  /* .form__title */
-  &__title {}
-
-  /* .form__item */
-  &__item {}
-
-  /* .form__input */
-  &__input {}
-
-  /* .form__button */
-  &__button {}
-}
-
 
 //========================================================================================================================================================
-
-.banner {}
 
 .banner-warning {
   // @include adaptiveValue("height", 132, 44);

@@ -1,10 +1,20 @@
 // Подключение функционала "Чертогов Фрилансера"
 // Подключение списка активных модулей
-import { flsModules } from "../modules.js";
+import {
+	flsModules
+} from "../modules.js";
 // Вспомогательные функции
-import { isMobile, _slideUp, _slideDown, _slideToggle, FLS } from "../functions.js";
+import {
+	isMobile,
+	_slideUp,
+	_slideDown,
+	_slideToggle,
+	FLS
+} from "../functions.js";
 // Модуль прокрутки к блоку
-import { gotoBlock } from "../scroll/gotoblock.js";
+import {
+	gotoBlock
+} from "../scroll/gotoblock.js";
 //================================================================================================================================================================================================================================================================================================================================
 
 /*
@@ -12,7 +22,9 @@ import { gotoBlock } from "../scroll/gotoblock.js";
 */
 
 // Работа с полями формы. Добавление классов, работа с placeholder
-export function formFieldsInit(options = { viewPass: false }) {
+export function formFieldsInit(options = {
+	viewPass: false
+}) {
 	// Если включено, добавляем функционал "скрыть плейсходлер при фокусе"
 	const formFields = document.querySelectorAll('input[placeholder],textarea[placeholder]');
 	if (formFields.length) {
@@ -150,7 +162,9 @@ export let formValidate = {
 	}
 }
 /* Отправка форм */
-export function formSubmit(options = { validate: true }) {
+export function formSubmit(options = {
+	validate: true
+}) {
 	const forms = document.forms;
 	if (forms.length) {
 		for (const form of forms) {
@@ -187,7 +201,7 @@ export function formSubmit(options = { validate: true }) {
 					alert("Ошибка");
 					form.classList.remove('_sending');
 				}
-			} else if (form.hasAttribute('data-dev')) {	// Если режим разработки
+			} else if (form.hasAttribute('data-dev')) { // Если режим разработки
 				e.preventDefault();
 				formSent(form);
 			}
@@ -220,6 +234,7 @@ export function formSubmit(options = { validate: true }) {
 		// Сообщаем в консоль
 		formLogging(`Форма отправлена!`);
 	}
+
 	function formLogging(message) {
 		FLS(`[Формы]: ${message}`);
 	}

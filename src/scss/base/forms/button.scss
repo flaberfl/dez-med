@@ -20,7 +20,6 @@
 
 		background-color: #fff;
 
-		font-family: "Roboto";
 		color: $btnColor;
 
 		@media (max-width: em(360)) {
@@ -31,7 +30,6 @@
 	}
 
 	&_transp {
-		font-family: "Roboto";
 		padding: rem(18) rem(20);
 		border: 1px solid #fff;
 		color: #fff;
