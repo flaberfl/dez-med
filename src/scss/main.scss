@@ -1282,6 +1282,63 @@ swiper-sets-btn {
   &__button {}
 }
 
-.input {}
 
-.button {}
+//========================================================================================================================================================
+
+
+.banner {
+  padding: rem(8) rem(40);
+
+  @include adaptiveValue("height", 132, 44);
+
+  background-color: #B7C3D1;
+
+  /* .banner__container */
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  /* .banner__content */
+  &__content {
+    padding-top: rem(12);
+    position: relative;
+    flex: 0 1 60%;
+
+    text-align: center;
+  }
+
+  &__frame {
+    position: absolute;
+    left: 0;
+    top: rem(-5);
+    width: 100%;
+  }
+
+  /* .banner__text */
+  &__text {
+
+    // max-width: rem(540);
+
+    @include adaptiveValue("font-size", 16, 4);
+    color: #CD2630;
+    line-height: math.div(24, 16);
+    // background: url('@img/frame.png') center / contain no-repeat;
+
+
+
+    span {
+      display: block;
+      padding-left: rem(46);
+
+      @include adaptiveValue("font-size", 24, 7);
+      font-weight: 700;
+      line-height: math.div(36, 24);
+
+
+    }
+  }
+
+  /* .banner__image */
+  &__image {}
+}
