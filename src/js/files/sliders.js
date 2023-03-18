@@ -62,7 +62,6 @@ function initSliders() {
 				disableOnInteraction: false,
 			},
 			*/
-			enabled: false,
 			observer: true,
 			observeParents: true,
 			slidesPerView: 3,
@@ -87,15 +86,14 @@ function initSliders() {
 
 			breakpoints: {
 				320: {
-					slidesPerView: 1,
 					spaceBetween: 0,
+					slidesPerView: 1,
 				},
 				768: {
 					slidesPerView: 2,
 					spaceBetween: 30,
 				},
 				992: {
-					enabled: true,
 					slidesPerView: 3,
 					spaceBetween: 60,
 				},
@@ -173,7 +171,7 @@ function initSliders() {
 	}
 	// if (document.querySelector('.swiper__sets')) { // Указываем класс нужного слайдера
 	// 	// Создаем слайдер
-	// 	new Swiper('.swiper__sets-slider', {
+	// 	new Swiper('.swiper__sets', {
 	// 		// Подключаем модули слайдера
 	// 		// для конкретного случая
 	// 		modules: [Navigation],
@@ -190,20 +188,22 @@ function initSliders() {
 	// 		spaceBetween: 60,
 	// 		// autoHeight: true,
 	// 		speed: 800,
-	// 		//touchRatio: 0,
+	// 		watchOverflow: true,
+
+	// 		// touchRatio: 0,
 	// 		//simulateTouch: false,
 	// 		//loop: true,
 	// 		//preloadImages: false,
 	// 		//lazy: true,
 	// 		// Dotts
-	// 		pagination: {
-	// 			el: '.swiper-pagination',
-	// 			clickable: true,
-	// 		},
+	// 		// pagination: {
+	// 		// 	el: '.swiper-pagination',
+	// 		// 	clickable: true,
+	// 		// },
 	// 		// Arrows
 	// 		navigation: {
-	// 			nextEl: '.swiper-sets-btn_next',
-	// 			prevEl: '.swiper-sets-btn_prev',
+	// 			nextEl: '.swiper-types-btn_next',
+	// 			prevEl: '.swiper-types-btn_prev',
 	// 		},
 
 	// 		breakpoints: {
@@ -212,7 +212,7 @@ function initSliders() {
 	// 				spaceBetween: 0,
 	// 			},
 	// 			768: {
-	// 				slidesPerView: 2,
+	// 				slidesPerView: 1,
 	// 				spaceBetween: 30,
 	// 			},
 	// 			992: {
