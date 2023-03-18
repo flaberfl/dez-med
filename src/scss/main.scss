@@ -262,6 +262,7 @@
 //========================================================================================================================================================
 
 .type-hospital {
+  @include adaptiveValue("padding-bottom", 100, 55);
 
   /* .type-hospital__page */
   &__page {}
@@ -475,6 +476,8 @@ swiper-sets-btn {
 
 .sets {
 
+  @include adaptiveValue("padding-bottom", 97, 54);
+
   /* .sets__container */
   &__container {
     position: relative;
@@ -658,7 +661,7 @@ swiper-sets-btn {
 
 .catalog {
 
-  @include adaptiveValue("padding-bottom", 60, 30);
+  @include adaptiveValue("padding-bottom", 82, 64);
 
   background-color: #fff;
 
@@ -1343,8 +1346,10 @@ swiper-sets-btn {
 }
 
 .banner-eco {
+  margin-bottom: rem(55);
 
   background-color: #C1CBD7;
+
 
   /* .banner-eco__container */
   &__container {
@@ -1381,5 +1386,8 @@ swiper-sets-btn {
       max-width: 100%;
     }
   }
+}
 
+.banner-img {
+  @include adaptiveValue("height", 136, 48);
 }
