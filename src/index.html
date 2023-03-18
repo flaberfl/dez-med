@@ -6,7 +6,7 @@
 
 <body>
 
-	<div class="wrapper">
+	<div class="wrapper" data-tabs>
 		@@include('html/_header.htm',{})
 		<main class="page">
 
@@ -691,8 +691,8 @@
 				<div class="catalog__container">
 					<h2 class="catalog__title title title_cat">Каталог продукции</h2>
 
-					<div data-tabs class="catalog__body">
-						<nav data-tabs-titles class="catalog__header header-catalog" data-da1=".menu__body,768">
+					<div class="catalog__body">
+						<nav data-tabs-titles class="catalog__header header-catalog" data-da=".menu__body,768">
 
 							<button type="button" class="header-catalog__title _tab-active">
 								<img src="@img/catalog/title-01.png" alt="Концентраты" class="header-catalog__image">

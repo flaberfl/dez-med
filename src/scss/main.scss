@@ -733,34 +733,34 @@ swiper-sets-btn {
   }
 
   @media (max-width:$mobile) {
-    display: none;
+    // display: none;
   }
 
-  // @media (max-width:$mobile) {
-  //   position: relative;
-  //   display: grid;
-  //   gap: rem(10);
-  //   padding: rem(18) 0;
+  @media (max-width:$mobile) {
+    position: relative;
+    display: grid;
+    gap: rem(10);
+    padding: rem(18) 0;
 
-  //   &::before,
-  //   &::after {
-  //     content: '';
-  //     position: absolute;
-  //     width: rem(200);
-  //     height: rem(1);
-  //     left: -4%;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: rem(200);
+      height: rem(1);
+      left: -4%;
 
-  //     background: rgba(255, 255, 255, 0.5);
-  //   }
+      background: rgba(255, 255, 255, 0.5);
+    }
 
-  //   &::before {
-  //     bottom: 0;
-  //   }
+    &::before {
+      bottom: 0;
+    }
 
-  //   &::after {
-  //     top: 0;
-  //   }
-  // }
+    &::after {
+      top: 0;
+    }
+  }
 
   /* .header-catalog__title */
   &__title {
