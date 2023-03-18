@@ -1287,7 +1287,7 @@ swiper-sets-btn {
 
 
 .banner {
-  padding: rem(8) rem(40);
+  padding: rem(0) rem(40);
 
   @include adaptiveValue("height", 132, 44);
 
@@ -1297,11 +1297,13 @@ swiper-sets-btn {
   &__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   /* .banner__content */
   &__content {
     padding-top: rem(12);
+    margin-top: rem(-20);
     position: relative;
     flex: 0 1 60%;
 
@@ -1318,27 +1320,24 @@ swiper-sets-btn {
   /* .banner__text */
   &__text {
 
-    // max-width: rem(540);
-
     @include adaptiveValue("font-size", 16, 4);
     color: #CD2630;
     line-height: math.div(24, 16);
-    // background: url('@img/frame.png') center / contain no-repeat;
-
-
 
     span {
       display: block;
-      padding-left: rem(46);
+      width: 100%;
 
       @include adaptiveValue("font-size", 24, 7);
       font-weight: 700;
       line-height: math.div(36, 24);
-
-
     }
   }
 
   /* .banner__image */
-  &__image {}
+  &__image {
+    img {
+      max-width: 100%;
+    }
+  }
 }
