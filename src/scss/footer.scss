@@ -9,8 +9,6 @@
   @include adaptiveValue("height", 182, 51);
   padding: rem(10);
 
-
-
   color: #fff;
   background-color: #4A7BB9;
 
@@ -64,14 +62,5 @@
 
       @include adaptiveValue("font-size", 16, 10);
     }
-
-    /* .contacts-footer__phone" */
-    &__phone {}
-
-    /* .contacts-footer__adress */
-    &__adress {}
-
-    /* .contacts-footer__mail */
-    &__mail {}
   }
 }
