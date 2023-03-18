@@ -10,15 +10,15 @@
 		@@include('html/_header.htm',{})
 		<main class="page">
 
-			<section class="main__page main">
+			<section class="main__page main" style="background: url('@img/bg.jpg') right / cover no-repeat;">
 				<div class="main__container">
 					<div class="main__body">
 						<div class="main__content">
 							<h1 class="main__title">для медицинских организаций <span>дезинфицирующие средства</span></h1>
 
 							<div class="main__buttons">
-								<a href="#" class="main__button button button_white">Быстрый заказ</a>
-								<a href="#" class="main__button button button_transp">Консультация</a>
+								<a href="" data-popup="#popup-submit_fast" class="main__button button button_white">Быстрый заказ</a>
+								<a href="" data-popup="#popup-submit" class="main__button button button_transp">Консультация</a>
 							</div>
 						</div>
 						<div class="main__services" data-da=".menu__body,767">
@@ -28,7 +28,6 @@
 						</div>
 					</div>
 
-					<!-- <img class="main__bg" src="@img/bg.jpg" alt="Задний фон"> -->
 				</div>
 			</section>
 
@@ -188,8 +187,8 @@
 										</li>
 									</ul>
 
-									<button class="item-type-hospital__button button button_main" type="submit"
-										class="button">ЗАКАЗАТЬ</button>
+									<button data-popup="#popup-submit_types" class="item-type-hospital__button button button_main"
+										type="submit" class="button">ЗАКАЗАТЬ</button>
 
 								</div>
 
@@ -271,8 +270,8 @@
 										</li>
 									</ul>
 
-									<button class="item-type-hospital__button button button_main" type="submit"
-										class="button">ЗАКАЗАТЬ</button>
+									<button data-popup="#popup-submit_types" class="item-type-hospital__button button button_main"
+										type="submit" class="button">ЗАКАЗАТЬ</button>
 								</div>
 
 							</li>
@@ -317,8 +316,8 @@
 										</li>
 									</ul>
 
-									<button class="item-type-hospital__button button button_main" type="submit"
-										class="button">ЗАКАЗАТЬ</button>
+									<button data-popup="#popup-submit_types" class="item-type-hospital__button button button_main"
+										type="submit" class="button">ЗАКАЗАТЬ</button>
 
 								</div>
 
@@ -399,8 +398,8 @@
 										</li>
 									</ul>
 
-									<button class="item-type-hospital__button button button_main" type="submit"
-										class="button">ЗАКАЗАТЬ</button>
+									<button data-popup="#popup-submit_types" class="item-type-hospital__button button button_main"
+										type="submit" class="button">ЗАКАЗАТЬ</button>
 								</div>
 							</li>
 
@@ -488,7 +487,8 @@
 												<div class="footer-item-sets__name">комплекс</div>
 												<div class="footer-item-sets__type">Премиум</div>
 											</h3>
-											<button class="button button_type" type="submit" class="button">Заказать</button>
+											<button data-popup="#popup-submit_sets" class="button button_type" type="submit"
+												class="button">Заказать</button>
 										</div>
 
 										<div class="footer-item-sets__footer">
@@ -538,7 +538,8 @@
 												<div class="footer-item-sets__name">комплекс</div>
 												<div class="footer-item-sets__type">Милд</div>
 											</h3>
-											<button class="button button_type" type="submit" class="button">Заказать</button>
+											<button data-popup="#popup-submit_sets" class="button button_type" type="submit"
+												class="button">Заказать</button>
 										</div>
 
 										<div class="footer-item-sets__footer">
@@ -588,7 +589,8 @@
 												<div class="footer-item-sets__name">комплекс</div>
 												<div class="footer-item-sets__type">Экспресс</div>
 											</h3>
-											<button class="button button_type" type="submit" class="button">Заказать</button>
+											<button data-popup="#popup-submit_sets" class="button button_type" type="submit"
+												class="button">Заказать</button>
 										</div>
 
 										<div class="footer-item-sets__footer">
@@ -764,8 +766,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -823,8 +825,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -882,8 +884,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -941,8 +943,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1000,8 +1002,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1059,8 +1061,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1118,8 +1120,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1177,8 +1179,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1254,8 +1256,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1313,8 +1315,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1372,8 +1374,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1431,8 +1433,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1490,8 +1492,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1549,8 +1551,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1608,8 +1610,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1667,8 +1669,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1740,8 +1742,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1799,8 +1801,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1858,8 +1860,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1917,8 +1919,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -1976,8 +1978,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2035,8 +2037,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2094,8 +2096,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2153,8 +2155,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2226,8 +2228,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2285,8 +2287,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2344,8 +2346,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2403,8 +2405,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2462,8 +2464,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2521,8 +2523,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2580,8 +2582,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2639,8 +2641,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2712,8 +2714,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2771,8 +2773,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2830,8 +2832,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2889,8 +2891,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -2948,8 +2950,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3007,8 +3009,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3066,8 +3068,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3125,8 +3127,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3198,8 +3200,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3257,8 +3259,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3316,8 +3318,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3375,8 +3377,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3434,8 +3436,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3493,8 +3495,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3552,8 +3554,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3611,8 +3613,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3684,8 +3686,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3743,8 +3745,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3802,8 +3804,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3861,8 +3863,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3920,8 +3922,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -3979,8 +3981,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4038,8 +4040,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4097,8 +4099,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4170,8 +4172,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4229,8 +4231,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4288,8 +4290,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4347,8 +4349,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4406,8 +4408,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4465,8 +4467,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4524,8 +4526,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4583,8 +4585,8 @@
 													<img src="@img/catalog/for-04.png" alt="Инъекционное поле" class="list-product__image">
 													<p class="list-product__name">Инъекционное поле</p>
 												</div>
-												<button class="list-product__button button button_type" type="submit"
-													class="button">ЗАКАЗАТЬ</button>
+												<button data-popup="#popup-submit_fast" class="list-product__button button button_type"
+													type="submit" class="button">ЗАКАЗАТЬ</button>
 											</div>
 
 											<div class="product__image">
@@ -4653,7 +4655,7 @@
 				</div>
 			</div>
 
-			<section class="docs">
+			<section class="page__docs docs" style="background: url('@img/back-slider.jpg') right / cover no-repeat;">
 				<div class="docs__container">
 					<h2 class="docs__title title title_70">Документы</h2>
 
@@ -4739,7 +4741,7 @@
 				</div>
 			</section>
 
-			<section class="fines">
+			<section class="page__fines fines">
 				<div class="fines__container">
 					<h2 class="fines__title title title_70">Штрафы</h2>
 					<div class="fines__body">
@@ -4799,6 +4801,7 @@
 						</div>
 
 					</form>
+
 				</div>
 			</section>
 
