@@ -60,7 +60,7 @@
   Документация: https://template.fls.guru/template-docs/funkcional-popup.html
   Сниппет (HTML): pl
   */
-  // import './libs/popup.js'
+  import './libs/popup.js'
 
   /*
   Модуль параллакса мышью
@@ -89,7 +89,7 @@
   // flsForms.formRating();
 
   /* Модуль работы с select. */
-  // import './libs/select.js'
+  import './libs/select.js'
 
   /* (В работе) Модуль работы с масками.*/
   /*
@@ -167,11 +167,11 @@
 
   // Плавная навигация по странице
   // Документация: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
-  // flsScroll.pageNavigation();
+  flsScroll.pageNavigation();
 
   // Функционал добавления классов к хедеру при прокрутке
   // Документация: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
-  // flsScroll.headerScroll();
+  flsScroll.headerScroll();
 
   // Функционал липкого блока
   // flsScroll.stickyBlock();
